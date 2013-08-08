@@ -1,4 +1,10 @@
 Swmicrosite::Application.routes.draw do
+  
+  root :to => 'pages#home'
+  get 'live' => 'pages#live'  
+  get 'archive' => 'pages#archive'
+  get 'about' => 'pages#about'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
